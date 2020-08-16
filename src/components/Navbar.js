@@ -31,6 +31,7 @@ export default class Navbar extends Component {
                    </Link>
                   </li>
                </ul>
+               
              	<Link to="/cart" className="ml-auto">
              	    <button className="button">
              		<spam className="mr-2">

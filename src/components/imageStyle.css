@@ -1,0 +1,15 @@
+.center {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+}
+
+.image {
+    width:1200px;
+    height: 450px; 
+	/*border: 1px solid var(--green);*/
+}

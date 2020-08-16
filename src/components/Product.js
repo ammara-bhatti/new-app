@@ -6,29 +6,29 @@ export default class Product extends Component {
      super(props)
 	     this.state = {
 		 	search: '', products: [
-  {
-    id: 1,
-    name: "Product1",
-    price: 100
-  },
-  {
-    id: 2,
-    name: "Product2",
-    price: 100
-  },
-  {
-    id: 3,
-    name: "Product3",
-    price: 100
-  },
-  {
-    id: 4,
-    name: "Product4",
-    price: 100
-  },
-]
-, searchedProducts: [],
-		}
+				  {
+				    id: 1,
+				    name: "Product1",
+				    price: 100
+				  },
+				  {
+				    id: 2,
+				    name: "Product2",
+				    price: 100
+				  },
+				  {
+				    id: 3,
+				    name: "Product3",
+				    price: 100
+				  },
+				  {
+				    id: 4,
+				    name: "Product4",
+				    price: 100
+				  },
+				]
+				, searchedProducts: [],
+			}
 	
 }
 	onClickHandler = () => {
@@ -43,28 +43,30 @@ export default class Product extends Component {
 		})
 	}  
 	render() {
-		
-		return (
-		<div>
+	return (
+        <div>
           <div> 
           <h3> Shopping here </h3>
-	        <input onChange={this.inputChangeHandler} type="text" placeholder="Search" />
-	        <button onClick={this.onClickHandler}>
+	        <input onChange={this.inputChangeHandler} type="text" placeholder="Search" className="button"/>
+	        <button onClick={this.onClickHandler} className="button">
+	        	<spam className="mr-2">
+	        	<i className="fa fa-search" />
+	        	</spam>
 	       	 Search
 	        </button>      
           </div>
           <div>
-  {
-    this.state.searchedProducts.map (product =>
-      <div>
-        <span>{product.id}</span>
-        <span>{product.name}</span>
-        <span>{product.price}</span>
-      </div>
-      )
-  }
+
+ 		 
+		  { this.state.searchedProducts.map (product =>
+		      <div>
+		        <span>{product.id}</span>
+		        <span>{product.name}</span>
+		        <span>{product.price}</span>
+		      </div>
+		      );
+           }
 </div>
 </div>
 		);
 	}
-}
