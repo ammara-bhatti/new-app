@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import Product from "./Product";
 import Title from './Title';
-import StoreProducts from '../data';
+import { storeProducts } from '../data';
 /*import {ProductConsumer} from '../context';
 */
 export default class ProductList extends Component {
-	state={
-		product: StoreProducts
+	state = {
+		product: storeProducts
 	};
 	render() {
 		console.log(this.state.products);
 		return (
 			<React.Fragment>
-			<div className="py-5">
-				<div className="container">
-					<Title name="our" title="product" />
+				<div className="py-5">
+					<div className="container">
+						<Title name="our" title="product" />
 						<Title name="See new mobile with description" />
 
 						{/*<div className="row">
@@ -24,8 +24,8 @@ export default class ProductList extends Component {
 								}}
 							</ProductConsumer>
 						</div>*/}
+					</div>
 				</div>
-			 </div>
 			</React.Fragment>
 		);
 	}

@@ -1,35 +1,46 @@
-import React, { Component } from 'react'
-export const StoreProducts = [
-{
-
-	id:1,
-	title: "Google Pixel - Black",
-	img: "assets/images/mobile.jpg",
-	company: "Samsung",
-	info: "",
-	inCart: false,
-	count: 0,
-	total: 0
-},
-{ 
-	id:2,
-	title: "Google Pixel - Black",
-	img: "assets/images/mobile.jpg",
-	company: "Samsung",
-	info: "",
-	inCart: false,
-	count: 0,
-	total: 0	
-
-}
-
+const storeProducts = [
+	{
+		id: 1,
+		title: "Google Pixel - Black",
+		img: "assets/images/mobile.jpg",
+		company: "Samsung",
+		info: "",
+		inCart: false,
+		count: 0,
+		total: 0,
+		price: "12 USD"
+	},
+	{
+		id: 2,
+		title: "Google Pixel - Black",
+		img: "assets/images/mobile.jpg",
+		company: "Samsung",
+		info: "",
+		inCart: false,
+		count: 0,
+		total: 0,
+		price: "10 USD"
+	}
 ];
 
+const categories = [
+	{
+		id:1,
+		name: "Fruits",
+		description: "Fresh fruits"
+	},
+	{
+		id:2,
+		name: "Vegetables",
+		description: "Fresh vegetables"
+	}
+];
 
-/*export {
- StoreProducts
+export {
+ storeProducts,
+ categories
 }
-*/
+
 /*const detailProduct = {};
 
 storeProducts.forEach((arrayItem) => {
